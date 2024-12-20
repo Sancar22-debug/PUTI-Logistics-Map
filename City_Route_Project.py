@@ -117,6 +117,11 @@ print("Cities we operate in:")
 for city in cities.keys():
     print(city)
 
+print("Our Routes:")
+
+for city1, city2, distance in paths:
+    print(f'{city1} --> {city2} {distance}km')
+
 start_city = input("\nEnter the start city: ")
 end_city = input("Enter the destination city: ")
 
